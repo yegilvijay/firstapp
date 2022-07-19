@@ -53,7 +53,7 @@ function Signup() {
                         </button>
                     </div>
                     <p className="forgot-password text-right">
-                        Already registered <Link to="/login.js">sign in</Link>
+                        Already registered <Link to="/login">sign in</Link>
                     </p>
                 </form>
 
