@@ -1,0 +1,356 @@
+.invoice-warp {
+    padding: 0 9%;
+}
+
+.row {
+    margin: 0 0 10px 0;
+}
+
+.invoice {
+    position: relative;
+    background-color: #FFF;
+    min-height: 680px;
+    padding: 15px 45px 15px 45px;
+}
+
+.invoice header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.invoice-logo {
+    width: 21%;
+    float: left;
+    padding: 1%;
+    background-color: #eaeaea;
+    height: 154px;
+}
+
+.invoice-logo img {
+    height: 135px;
+    width: 275px;
+}
+
+.company_info {
+    width: 79%;
+    float: left;
+}
+
+.invoice_info {
+    height: 65px;
+    line-height: 65px;
+    background-color: #eaeaea;
+}
+
+.invoice-num {
+    height: 65px;
+    float: right;
+    background: var(--primary);
+    color: #fff!important;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.invoice-date {
+    height: 65px;
+    float: right;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.company_contact_info {
+    border-bottom: 90px solid #fff;
+    border-left: 70px solid transparent;
+    height: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    background: #eaeaea;
+}
+
+.company_contact_info a {
+    overflow: hidden;
+    height: 72px;
+    width: 25%;
+    float: left;
+    margin: 9px 0 0 0;
+    color: #353;
+    text-decoration: none;
+}
+
+.company_contact_info a i {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.invoice .invoice-to {
+    text-align: left;
+    margin: 15px 0 0 0;
+}
+
+.invoice .invoice-to h2 {
+    background: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.invoice input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: normal;
+    min-height: 27px !important;
+    width: 100%;
+    display: block;
+}
+
+.invoice .invoice-details {
+    text-align: left;
+    margin: 15px 0 0 0;
+}
+
+.invoice .invoice-details h2 {
+    background: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.invoice textarea {
+    background: none;
+    border: none;
+    height: 100%;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    font-weight: normal;
+    min-height: 27px !important;
+}
+
+.invoice main {
+    padding-bottom: 50px;
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.invoice table>thead {
+    background: var(--primary);
+    color: #fff;
+}
+
+.invoice table th {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.invoice table .no {
+    color: #fff;
+    font-size: 16px;
+    background: var(--primary);
+    color: #fff;
+}
+
+.invoice table>tbody>tr td:nth-child(2) {
+    width: 950px;
+}
+
+.invoice table tbody td {
+    background: #eaeaea;
+}
+
+.invoice table td, .invoice table th {
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.invoice table>tbody>tr td:nth-child(2) textarea {
+    width: 550px;
+}
+
+.invoice table .unit {
+    background: #ddd;
+}
+
+.invoice table .qty, .invoice table .total, .invoice table .unit {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.invoice table>tbody>tr td:nth-child(3) input {
+    text-align: right;
+}
+
+.invoice table .qty, .invoice table .total, .invoice table .unit {
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.invoice table .qty input, .invoice table .total input, .invoice table .unit input {
+    text-align: right;
+}
+
+.invoice table tfoot td {
+    background: 0 0;
+    /*border-bottom: none;*/
+    white-space: nowrap;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-top: none;
+}
+
+.invoice table tfoot td:last-child {
+    border-bottom: 1px var(--primary) solid;
+}
+
+.invoice main .amount_in_words {
+    margin-top: 7px;
+}
+
+.invoice main .amount_in_words h2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+
+.invoice main .notices h2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+
+.foot-address {
+    text-align: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.foot-add {
+    font-size: 20px;
+    text-align: center;
+}
+
+.foot {
+    width: 100%;
+}
+
+.invoice table .total {
+    background: var(--primary);
+    color: #fff;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: 600;
+    background: #78bc43;
+    min-width: 150px;
+    margin: 0 auto;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 15px;
+}
+
+.salary-invoiceview-btn{
+    text-align: center;
+}
+
+.no a{
+    float: left;
+    display: contents;
+}
+.no a i{
+    margin-left: -41px;
+    position: absolute; 
+}
+
+.removeClass {
+    background: red;
+    border-radius: 82px;
+    width: 30px;
+    height: 30px !important;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 30px;
+    padding: 0 0 0 0;
+    margin: 0;
+    transform: rotate(-90deg);
+    font-style: normal;
+}
+
+#amountrate{
+    color: #fff;
+}
+.gstcheck{
+    display: flex;
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
+    .invoice table>tbody>tr td:nth-child(2) textarea {
+        width: 400px;
+    }
+    .invoice table>tbody>tr td:nth-child(2) {
+        width: 470px;
+    }
+    .invoice .invoice-to {
+        margin: 5px 0 0 0;
+    }
+    .invoice .invoice-details{
+        margin: 5px 0 0 0;
+    }
+    .invoice-logo img{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1500px) and (max-width: 1800px){
+    .invoice table>tbody>tr td:nth-child(2) textarea {
+        width: 500px;
+    }
+    .invoice table>tbody>tr td:nth-child(2) {
+        width: 660px;
+    }
+    .invoice .invoice-to {
+        margin: 5px 0 0 0;
+    }
+    .invoice .invoice-details{
+        margin: 5px 0 0 0;
+    } 
+    .invoice-logo img{
+        width: 100%;
+    }
+
+}
+
+.page_header {
+    background: #fff;
+    margin: 0 13px 10px 12px;
+    padding: 10px 0;
+}
+
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: transparent !important;
+}

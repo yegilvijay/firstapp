@@ -5,19 +5,27 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Sidenav from '../component/sidenav'
+import TopHaeder from "../component/header";
 function Adminlayout(props) {   
     return (
         <>
-          <Container>
-      <Row>
-        <Col><Sidenav /></Col>
-      </Row>
-      <Row>
-        <Col>
-        {props.children}
-        </Col>
-      </Row>
-    </Container>
+
+    <div>
+      <Sidenav/>
+
+        <main>
+         
+         <TopHaeder header={props.headername}/>
+          <Row>
+            <Col> {props.children}</Col>
+          </Row>
+        
+        </main>
+
+    </div>
+
+
+
         </>
     );
 }

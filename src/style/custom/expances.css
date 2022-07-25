@@ -1,0 +1,47 @@
+.page-item:hover a {
+    background-color: #1F4788;
+    color: #fff;
+}
+
+.pay-drop:hover .pay-drop-content{
+    transition: all .5s ease !important;
+    display: block;
+    color: #fff;
+}
+
+.salary-invoice-btn {
+    text-align: center;
+}
+
+#extra1 {
+    font-weight: 600;
+    display: inline-flex;
+    color: #ff2b1c;
+    font-size: 13px;
+}
+
+.pop{
+    margin-bottom: 10px;
+}
+
+.info-entity{
+    margin-top: 10px;
+}
+
+.nav-adj{
+    margin-top: 10px;
+}
+
+.modal select{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}

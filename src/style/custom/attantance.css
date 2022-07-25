@@ -1,0 +1,120 @@
+.t-collapse{
+    border-collapse: separate;
+}
+
+.dataTables_length label{
+    display: inline-flex;
+    line-height: 37px;
+    margin-left: 20px;
+}
+
+.dataTables_length select{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search-option {
+    float: right;
+    line-height: 33px;
+}
+
+.search-option label{
+    display: inline-flex;
+}
+
+.info-entity{
+    margin-top: 10px;
+}
+
+.nav-adj{
+    margin-top: 10px;
+}
+
+.t-head{
+    background: #67cb33;
+}
+
+.attantance-weeks{
+    text-align: center;
+}
+
+.attantances.dataTable.no-footer {
+    border-bottom: none;
+}
+
+.attantances > :not(caption) > * > * {
+    border-bottom: none !important;
+}
+
+.attantances th{
+    padding-left: 10px !important;
+}
+
+.attantances tbody td{
+    padding: 15px 10px !important;
+}
+
+.week-btn{
+    background: #fff;
+    color: #000;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.actives{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.holiday{
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    background: #eebf03;
+    border-radius: 50%;
+    display: inline-block;
+}
+.present{
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    background: #64cd35;
+    border-radius: 50%;
+    display: inline-block;
+}
+.lop{
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    background: #fe0008;
+    border-radius: 50%;
+    display: inline-block;
+}
+.sick{
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    background: linear-gradient( -92deg, #2a80df, #2a80df 47%, white 48%, white 44%, #66cd36 47% ); 
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.attantances-calander{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

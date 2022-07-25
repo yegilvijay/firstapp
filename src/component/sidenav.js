@@ -18,11 +18,12 @@ function Sidenav() {
       </div>
       <div className="nav__list">
         <li>
-          <a href="index.html" className="nav__link active">
+        <Link className="nav__link active" to="/"><i className="riot-icon riot-icon-dashboard nav__icon" />
+            <span className="nav__name">Dashboard</span></Link>
+          
             {/*<ion-icon name="home-outline" class="nav__icon"></ion-icon>*/}
-            <i className="riot-icon riot-icon-dashboard nav__icon" />
-            <span className="nav__name">Dashboard</span>
-          </a>
+            
+         
         </li>
         <li>
           <div className="nav__link riot-collapse">

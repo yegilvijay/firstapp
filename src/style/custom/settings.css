@@ -1,0 +1,116 @@
+.settings-warp{
+    width: 50%;
+    margin: 0 auto 50px auto;
+    padding: 20px 20px 60px 20px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.settings-warp li{
+    list-style: none;
+    display: inline-block;
+    font-size: 17px;
+    padding-right: 25px;
+}
+.settings-warp li i{
+    padding: 10px 20px 10px 20px;
+    font-size: 30px;
+}
+.company-name{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px;
+}
+.company-logo{
+    padding: 10px;
+}
+.settings-warp .bg-clr{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.settings-warp .bg-clr div{
+    background: #e7e7e7;
+}
+
+
+.settings-warp h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.settings-warp  .line{
+    border-right: 3px solid #78bc43;
+}
+.reg-content-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.address{
+    font-size: 20px;
+    font-weight: 500;
+}
+.address i{
+    font-size: 30px;
+    padding-right: 15px;
+}
+.float{
+    float: right !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.float input{
+    background: #78bc43;
+    color: #fff;
+    padding: 7px 20px 7px 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.row {
+    margin: 0 0 10px 0;
+}
+.sub-btn{
+    margin: auto;
+}
+.exit{
+    background-color: #ef1a4c;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    position: absolute;
+    right: -10px;
+    top: -9px;
+    font-weight: bolder;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    padding: 0!important;
+    font-size: 22px;
+}
+.settings_box_shadow{
+    border-radius: 15px;
+    box-shadow: 8px 13px 19px -13px rgb(0 0 0 / 35%);
+    -webkit-box-shadow: 8px 13px 19px -13px rgb(0 0 0 / 35%);
+    -moz-box-shadow: 8px 13px 19px -13px rgb(0 0 0 / 35%);
+    padding: 30px 10px 30px 30px;
+}
+.pd-left{
+    padding-left: 35px;
+    
+}
+.notes{
+    padding: 10px 0px 10px 23px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.min-height{
+    min-height: 166px;
+}
+.min-height-income{
+    min-height: 137px;
+}
+

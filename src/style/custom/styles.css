@@ -1,0 +1,244 @@
+
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --nav-width: 92px;
+  /*===== Colores =====*/
+  --first-color: #0C5DF4;
+  --bg-color: #12192C;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 17px;
+  /*===== z index =====*/
+  --z-fixed: 100;
+  --primary: #78bc43;
+}
+
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding: 0px 0 0 90px;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+  background: #edebec !important;
+}
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/*===== l NAV =====*/
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  padding: 1.5rem 1.5rem 2rem;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+
+/*===== NAV =====*/
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.l-navbar .nav .nav__link span{
+ display:none;
+}
+.expander .nav .nav__link span{
+ display:block;
+}
+.l-navbar .nav .nav__link:hover{
+ width:200px;
+}
+.expander .nav .nav__link{
+ width:200px;
+}
+.expander .nav .nav__link:hover{
+ width:200px;
+}
+.l-navbar .nav .nav__link:hover span{
+ display:block;
+
+}
+
+.expander .nav .nav__link:hover span{
+ display:block;
+ background-color:none !important;
+}
+
+.nav__brand{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.nav__toggle{
+  font-size: 1.25rem;
+  padding: 10px 8px;
+  cursor: pointer;
+}
+.nav__logo{
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: .75rem;
+  padding: 5px 10px 5px 10px;
+  color: var(--white-color);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  transition: .3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav__link:hover{
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+.nav__icon{
+  font-size: 22px;
+}
+.nav__name{
+  font-size: var(--small-font-size);
+}
+
+/*Expander menu*/
+.expander{
+  width: calc(var(--nav-width) + 9.25rem);
+}
+
+/*Add padding body*/
+.body-pd{
+  padding: 0px 0 0 240px;
+}
+
+/*Active links menu*/
+.active{
+  background-color: var(--first-color);
+}
+
+/*===== riot-collapse =====*/
+.riot-collapse{
+  grid-template-columns: 20px max-content 1fr;
+}
+.riot-collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+  font-size: 20px;
+}
+.riot-collapse__menu{
+  display: none;
+  padding: .75rem 13px;
+}
+.riot-collapse__sublink{
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+.riot-collapse__sublink:hover{
+  color: var(--white-color);
+}
+
+/*Show riot-collapse*/
+.showriot-collapse{
+  display: block;
+
+}
+
+/*Rotate icon*/
+.rotate{
+  transform: rotate(180deg);
+}
+.nav__list li{
+	list-style:none;
+  width: 41px;
+}
+
+.l-navbar .riot-collapse span:hover > .l-navbar .riot-collapse .riot-collapse__menu{
+	display:block;
+}
+
+.collapse__sublink{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.collapse__sublink{
+  display: block;
+}
+
+.collapse__sublink:hover{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.nav__name:hover{
+  border: none;
+}
+
+.riot-collapse__menu{
+  width: 210px;
+    padding-right: 0;
+}
+
+.exit {
+  background-color: #ef1a4c;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 1;
+  position: absolute;
+  right: -10px;
+  top: -9px;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  padding: 0!important;
+  font-size: 22px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+ 
+.page-link{
+  color: #19B5FE !important;
+}
+
+.header{
+  padding-top: 10px;
+  background: #fff;
+  padding-bottom: 5px;
+}
