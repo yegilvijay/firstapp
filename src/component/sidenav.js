@@ -13,18 +13,17 @@ function Sidenav() {
         {/* <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>*/}
         <i className="riot-icon riot-icon-menu nav__toggle" id="nav-toggle" />
         <a href="#" className="nav__logo">
-          {" "}
+          
         </a>
       </div>
       <div className="nav__list">
+
         <li>
         <Link className="nav__link active" to="/"><i className="riot-icon riot-icon-dashboard nav__icon" />
             <span className="nav__name">Dashboard</span></Link>
-          
             {/*<ion-icon name="home-outline" class="nav__icon"></ion-icon>*/}
-            
-         
         </li>
+
         <li>
           <div className="nav__link riot-collapse">
             {/*<ion-icon name="folder-outline" class="nav__icon"></ion-icon>*/}
@@ -33,24 +32,33 @@ function Sidenav() {
             {/*<ion-icon name="chevron-down-outline" class="riot-collapse__link"></ion-icon>*/}
             <i className="riot-icon riot-icon-down riot-collapse__link" />
             <ul className="riot-collapse__menu">
-              <a href="proforma_invoice.html" className="collapse__sublink">
-                Create Proforma Invoice{" "}
-              </a>
-              <a href="proforma_invoice.html" className="collapse__sublink">
-                View Proforma Invoice{" "}
-              </a>
-              <a href="pay_invoice.html" className="collapse__sublink">
-                Create Pay Invoice{" "}
-              </a>
-              <a href="pay_invoice.html" className="collapse__sublink">
-                View Pay Invoice{" "}
-              </a>
-              <a href="view_invoice.html" className="collapse__sublink">
-                View Invoice{" "}
-              </a>
+              <Link className="collapse__sublink" to="/proforma-invoice">
+                Create Proforma Invoice
+              </Link>
+              <Link className="collapse__sublink" to="/proforma-invoice">
+                View Proforma Invoice
+              </Link>
+              <Link className="collapse__sublink" to="/pay-invoice">
+                Create Pay Invoice
+              </Link>
+              <Link className="collapse__sublink" to="/pay-invoice">
+                View Pay Invoice
+              </Link>
+              <Link className="collapse__sublink" to="/view-invoice">
+                View Invoice
+              </Link>
             </ul>
           </div>
         </li>
+
+        <li>
+        <Link className="nav__link" to="/payslip"> 
+            {/*<ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>*/}
+            <i className="riot-icon riot-icon-expencess nav__icon" />
+            <span className="nav__name">Payslip</span></Link>
+          
+        </li>
+
         <li>
           <div className="nav__link riot-collapse">
             {/*<ion-icon name="folder-outline" class="nav__icon"></ion-icon>*/}
@@ -59,15 +67,16 @@ function Sidenav() {
             {/*<ion-icon name="chevron-down-outline" class="riot-collapse__link"></ion-icon>*/}
             <i className="riot-icon riot-icon-down riot-collapse__link" />
             <ul className="riot-collapse__menu">
-              <a href="clients.html" className="collapse__sublink">
-                Clients{" "}
-              </a>
-              <a href="vendors.html" className="collapse__sublink">
+              <Link className="collapse__sublink" to="/clients">
+                Clients
+              </Link>
+              <Link className="collapse__sublink" to="/vendors">
                 Vendors
-              </a>
+              </Link>
             </ul>
           </div>
         </li>
+
         <li>
           <div className="nav__link riot-collapse">
             {/*<ion-icon name="folder-outline" class="nav__icon"></ion-icon>*/}
@@ -76,25 +85,27 @@ function Sidenav() {
             {/*<ion-icon name="chevron-down-outline" class="riot-collapse__link"></ion-icon>*/}
             <i className="riot-icon riot-icon-down riot-collapse__link" />
             <ul className="riot-collapse__menu">
-              <a href="view_employee.html" className="collapse__sublink">
-                View Employee{" "}
-              </a>
-              <a href="designation.html" className="collapse__sublink">
-                Designation{" "}
-              </a>
-              <a href="employee_id.html" className="collapse__sublink">
-                Employee ID{" "}
-              </a>
+              <Link className="collapse__sublink" to="/view-employee">
+                View Employee
+              </Link>
+              <Link className="collapse__sublink" to="/designation">
+                Designation
+              </Link>
+              <Link className="collapse__sublink" to="/employee-id">
+                Employee ID
+              </Link>
             </ul>
           </div>
         </li>
+
         <li>
-          <a href="Expancess.html" className="nav__link">
+        <Link className="nav__link" to="/expancess"> 
             {/*<ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>*/}
             <i className="riot-icon riot-icon-expencess nav__icon" />
-            <span className="nav__name">Expancess</span>
-          </a>
+            <span className="nav__name">Expancess</span></Link>
+          
         </li>
+
         <li>
           <div className="nav__link riot-collapse">
             {/*<ion-icon name="folder-outline" class="nav__icon"></ion-icon>*/}
@@ -103,29 +114,31 @@ function Sidenav() {
             {/*<ion-icon name="chevron-down-outline" class="riot-collapse__link"></ion-icon>*/}
             <i className="riot-icon riot-icon-down riot-collapse__link" />
             <ul className="riot-collapse__menu">
-              <a href="view_attandance.html" className="collapse__sublink">
-                View Attandance{" "}
-              </a>
-              <a href="take_attandance.html" className="collapse__sublink">
+              <Link className="collapse__sublink" to="view-attandance/">
+                View Attandance
+              </Link>
+              <Link className="collapse__sublink" to="/take-attandance">
                 take Attandance
-              </a>
+              </Link>
             </ul>
           </div>
         </li>
+
         <li>
-          <a href="settings.html" className="nav__link">
+        <Link className="nav__link" to="/setting">
             {/*<ion-icon name="settings-outline" class="nav__icon"></ion-icon>*/}
             <i className="riot-icon riot-icon-setting nav__icon" />
             <span className="nav__name">Settings</span>
-          </a>
+          </Link>
         </li>
+
       </div>
     </div>
-    <a href="#" className="nav__link">
+    <Link className="nav__link" to="/login">
       {/*<ion-icon name="log-out-outline" class="nav__icon"></ion-icon>*/}
       <i className="riot-icon riot-icon-logout nav__icon" />
       <span className="nav__name">Log Out</span>
-    </a>
+    </Link>
   </nav>
 </div>
 

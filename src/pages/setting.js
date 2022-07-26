@@ -9,13 +9,7 @@ function Settings() {
         
         <>
       
-      <h2>Setting</h2>
-
-        
-            
-          
-
-           
+      
 
 
         </>

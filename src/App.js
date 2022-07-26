@@ -18,6 +18,18 @@ import './style/custom/settings.css';
 import './style/custom/styles.css';
 import About from './pages/about';
 import Settings from './pages/setting';
+import Clients from './pages/clients';
+import Designation from './pages/designation';
+import EmployeeId from './pages/employee-id';
+import Expancess from './pages/Expancess';
+import PayInvoice from './pages/pay-invoice';
+import Payslip from './pages/payslip';
+import ProformaInvoice from './pages/proforma-invoice';
+import TakeAttandance from './pages/take-attandance';
+import Vendors from './pages/vendors';
+import ViewAttandance from './pages/view-attandance';
+import ViewEmployee from './pages/view-employee';
+import ViewInvoice from './pages/view-invoice';
 import {
   BrowserRouter,
   Routes,
@@ -29,9 +41,20 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Adminlayout headername={"Home page"}> <Home /> </Adminlayout>} />
-      <Route path="/settings" element={<Adminlayout headername={"settings page"}> <Settings /> </Adminlayout>} />
-
+      <Route path="/" element={<Adminlayout headername={"Dashboard"}> <Home /> </Adminlayout>} />
+      <Route path="/setting" element={<Adminlayout headername={"settings page"}> <Settings /> </Adminlayout>} />
+      <Route path="/clients" element={<Adminlayout headername={"Clients"}> <Clients /> </Adminlayout>} />
+      <Route path="/designation" element={<Adminlayout headername={"Designation"}> < Designation/> </Adminlayout>} />
+      <Route path="/employee-id" element={<Adminlayout headername={"Employee Id"}> < EmployeeId/> </Adminlayout>} />
+      <Route path="/expancess" element={<Adminlayout headername={"Expancess"}> < Expancess/> </Adminlayout>} />
+      <Route path="/pay-invoice" element={<Adminlayout headername={"Pay Invoice"}> <PayInvoice /> </Adminlayout>} />
+      <Route path="/payslip" element={<Adminlayout headername={"Payslip"}> < Payslip/> </Adminlayout>} />
+      <Route path="/proforma-invoice" element={<Adminlayout headername={"Proforma Invoice"}> <ProformaInvoice /> </Adminlayout>} />
+      <Route path="/take-attandance" element={<Adminlayout headername={"Take Attandance"}> <TakeAttandance /> </Adminlayout>} />
+      <Route path="/vendors" element={<Adminlayout headername={"Vendors"}> < Vendors/> </Adminlayout>} />
+      <Route path="/view-attandance" element={<Adminlayout headername={"View Attandance"}> <ViewAttandance /> </Adminlayout>} />
+      <Route path="/view-employee" element={<Adminlayout headername={"View Employee"}> < ViewEmployee/> </Adminlayout>} />
+      <Route path="/view-invoice" element={<Adminlayout headername={"View Invoice"}> < ViewInvoice/> </Adminlayout>} />
       <Route path="/about" element={<Adminlayout headername={"About page"}><About/> </Adminlayout>} />
       <Route path="/sign-up" element={<Signup />} />
       <Route path="/login" element={<Login />} />

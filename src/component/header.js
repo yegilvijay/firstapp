@@ -11,7 +11,9 @@ function TopHaeder(props) {
 
 
         <Row>
-            <Col md="12">{props.header}</Col>
+            <Col md="12">
+                <h2>{props.header}</h2>
+                </Col>
           </Row>
 
         </>

@@ -2,24 +2,17 @@
 
 import React, { useState } from 'react';
 
-function Visai() {
+function About() {
    
              
     return (
         
         <>
       
-      <h2>About</h2>
-
-        
-            
-          
-
-           
-
+     
 
         </>
     );
 }
 
-export default Visai;
+export default About;
