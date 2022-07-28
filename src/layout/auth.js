@@ -15,7 +15,7 @@ function Authlayout(props) {
         <main>
         <Container>
           <Row className="align-items-center">
-            <Col></Col><Col> {props.children}</Col><Col></Col>
+            <Col> {props.children}</Col> <Col> </Col>
           </Row>
         </Container>
         
