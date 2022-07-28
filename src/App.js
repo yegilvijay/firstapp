@@ -35,6 +35,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Authlayout from './layout/auth';
 
 
 function App() {
@@ -56,8 +57,8 @@ function App() {
       <Route path="/view-employee" element={<Adminlayout headername={"View Employee"}> < ViewEmployee/> </Adminlayout>} />
       <Route path="/view-invoice" element={<Adminlayout headername={"View Invoice"}> < ViewInvoice/> </Adminlayout>} />
       <Route path="/about" element={<Adminlayout headername={"About page"}><About/> </Adminlayout>} />
-      <Route path="/sign-up" element={<Signup />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/sign-up" element={<Authlayout><Signup /></Authlayout>} />
+      <Route path="/login" element={<Authlayout> <Login /></Authlayout>} />
     </Routes>
   </BrowserRouter>
   );

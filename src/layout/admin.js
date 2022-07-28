@@ -12,7 +12,6 @@ function Adminlayout(props) {
 
     <div>
       <Sidenav/>
-
         <main>
          
          <TopHaeder header={props.headername}/>
