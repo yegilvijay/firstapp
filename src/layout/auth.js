@@ -10,19 +10,13 @@ function Authlayout(props) {
     return (
         <>
 
-    <div>
-      
-        <main>
         <Container>
           <Row className="align-items-center">
-            <Col></Col><Col> {props.children}</Col><Col></Col>
+            <Col md={3}></Col><Col md={6}> {props.children}</Col><Col md={3}></Col>
           </Row>
         </Container>
         
-        </main>
-
-    </div>
-
+       
 
 
         </>
